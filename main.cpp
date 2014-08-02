@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include "maths.h"
 
 int main(int argc, char** argv)
