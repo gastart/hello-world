@@ -14,14 +14,25 @@ import java.util.ArrayList;
  */
 public class maths {
     public static int sum(final int a, final int b) {
-        int result = a + b;
-        return result;
+        return a + b;
     }
     
-    public static int sum(final ArrayList<Integer> sums) {
+    public static int subtract(final int a, final int b) {
+        return a - b;
+    }
+    
+    public static int sum(final ArrayList<Integer> integers) {
         int value = 0;
-        for (Integer sum : sums) {
-            value += sum;
+        for (Integer integer : integers) {
+            value = sum(value, integer);
+        }
+        return value;
+    }
+    
+    public static int subtract(final int b, final ArrayList<Integer> integers) {
+        int value = b;
+        for (Integer integer : integers) {
+            value -= integer;
         }
         return value;
     }
