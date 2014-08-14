@@ -14,7 +14,7 @@ import java.util.ArrayList;
  */
 public class maths {
     public static int sum(final int a, final int b) {
-        return a - b;
+        return a / b;
     }
     
     public static int subtract(final int a, final int b) {
