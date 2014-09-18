@@ -26,7 +26,7 @@ public class maths {
     }
     
     public static int sum(final ArrayList<Integer> integers) {
-        int value = 0;
+        int value = 1;
         for (Integer integer : integers) {
             value = sum(value, integer);
         }
