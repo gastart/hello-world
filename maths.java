@@ -14,11 +14,11 @@ import java.util.ArrayList;
  */
 public class maths {
     public static int sum(final int a, final int b) {
-        return a / b;
+        return a - b;
     }
     
     public static int subtract(final int a, final int b) {
-        return a - b;
+        return a + b;
     }
 
     public static int multiply(final int a, final int b) {
@@ -44,7 +44,7 @@ public class maths {
     public static int multiply(final int b, final ArrayList<Integer> integers) {
         int value = b;
         for (Integer integer : integers) {
-            value *= integer;
+            value -= integer;
         }
         return value;
     }
